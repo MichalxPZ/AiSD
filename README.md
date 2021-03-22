@@ -8,61 +8,34 @@ Algorytmy i Struktury Danych
 Michał Zieliński 
 INF5.1 148064
 
-## Algorytmy Sortowania
+####Table of contents  
+1.[Algorytmy Sortowania](#algorytmy-sortowania)  
 
-Cel sprawozdania:
+## Algorytmy Sortowania
+<a name="algorytmy-sortowania"><a/>
+
+Cel sprawozdania:  
 zaimplementowanie podstawowych algorytmów sortowania w języku Python
 porównanie czasu wykonania algorytmów dla różnych typów danych wejściowych
 przetestowanie algorytmów
 porównanie złożoności czasowej algorytmów
 
-Algorytmy:
+Algorytmy:  
+1.Selection Sort  
+2.Insertion Sort  
+3.Bubble Sort  
+4.Quick Sort  
+5.Merge Sort  
+6.Heap Sort  
+7/Counting Sort  
 
-<tr>
-<li>
-Selection Sort
-</li>
-<li>
-Insertion Sort
-</li>
-<li>
-Bubble Sort
-</li>
-<li>
-Quick Sort
-</li>
-<li>
-Merge Sort
-</li>
-<li>
-Heap Sort
-</li>
-<li>
-Counting Sort
-</li>
-</tr>
-
-Algorytmy sprawdzam dla danych:
-<tr>
-<li>
-losowych (3 razy)
-</li>
-<li>
-wartości stałej
-</li>
-<li>
-posortowanych rosnąco
-</li>
-<li>
-posortowanych malejąco
-</li>
-<li>
-w kształcie A
-</li>
-<li>
-w kształcie V
-</li>
-</tr>
+Algorytmy sprawdzam dla danych:  
+1.losowych (3 razy)  
+2.wartości stałej  
+3.posortowanych rosnąco  
+4.posortowanych malejąco  
+5.w kształcie A  
+6.w kształcie V  
 
 ####Selection Sort
 ####Opis:
