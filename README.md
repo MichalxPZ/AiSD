@@ -37,98 +37,98 @@ Algorytmy sprawdzam dla danych:
 5.w kształcie A  
 6.w kształcie V  
 
-###Selection Sort
-###Opis:
+#### #Selection Sort
+#### #Opis:
 
 Algorytm przegląda tablicę n razy i za każdym razem umieszcza najmniejszy element na początku. Sortowanie w miejscu. Algorytm niestabilny. Złożoność czasowa O(n^2), gdyż w każdym przypadku wykonują się dwie zagnieżdżone pętle.
 
-###Porównanie złożoności dla różnego typu danych:
+#### #Porównanie złożoności dla różnego typu danych:
 
 ![alt text](plotselectionSort.png)
 
-###Wnioski:
+#### #Wnioski:
 
 Dla wszystkich typów danych otrzymujemy podobny czas sortowania. W każdym przypadku algorytm przechodzi przez dwie pętle.
 
-###Własne spostrzeżenia:
+#### #Własne spostrzeżenia:
 
 intuicyjny w implementacji algorytm, niestety bardzo wolny
 
-###Insertion Sort
+#### #Insertion Sort
 
-###Opis:
+#### #Opis:
 
 Algorytm wstawia kolejne elementy zbioru nieposortowanego na odpowiednie miejsce w zbiorze posortowanym. Sortowanie w miejscu. Algorytm stabilny.Złożoność czasowa O(n^2), gdyż w każdym przypadku wykonują się dwie zagnieżdżone pętle.
 
-###Porównanie złożoności dla różnego typu danych:
+#### #Porównanie złożoności dla różnego typu danych:
 
 ![alt text](plotinsertionSort.png)
 
-###Wnioski:
+#### #Wnioski:
 
 Znowu otrzymaliśmy podobne wyniki dla wszystkich typów danych wejściowych.
 
-###Własne spostrzeżenia:
+#### #Własne spostrzeżenia:
 
 intuicyjny w implementacji algorytm, niestety bardzo wolny
 
-###Bubble Sort
+#### #Bubble Sort
 
-###Opis:
+#### #Opis:
 
 Algorytm przechodzi po kolejnych indeksach tablicy. Porównuje dwa sąsiednie elementy i zamienia jeśli są w złej kolejności. Sortowanie w miejscu. Algorytm stabilny. Średnia i pesymistyczna złożoność czasowa to O(n^2), a optymistyczna O(n), gdy dane są posortowane.
 
-###Porównanie złożoności dla różnego typu danych:
+#### #Porównanie złożoności dla różnego typu danych:
 
 ![alt text](plotbubbleSort.png)
 
-###Wnioski:
+#### #Wnioski:
 
 Otrzymujemy podobne wyniki dla wszystkich typów testów. Najgorszy wynik otrzymujemy dla danych posortowanych malejąco, gdyż bąbelek zawsze przechodzi do końca tabeli.
 Dla danych posortowanych złożoność czasowa jest najlepsza.
 
-###Własne spostrzeżenia:
+#### #Własne spostrzeżenia:
 
 ten algorytm jest już bardziej optymalny dla pewnych typów danych niż dwaj poprzednicy
 
-###Quick Sort
+#### #Quick Sort
 
-###Opis:
+#### #Opis:
 
 Podejście dziel i zwyciężaj. Algorytm wybiera pivot jako losowy element z tablicy i dzieli ją na dwie podtablice. W pierwszej umieszczamy elementy większe od pivota, a w drugiej mniejsze. Wywołujemy algorytm rekurencyjnie na podtablicach aż do momentu, gdy długość tablicy będzie mniejsza bądź równa 1. Najgorsza złożoność występuje, gdy zawsze wybieramy skrajną (maksymalną, bądź minimalną) wartość jako pivot. Wynosi O(n^2). Optymistyczna złożoność czasowa O(n) występuje, gdy zawsze wybieramy medianę jako pivot. A średnia złożoność czasowa wynosi O(n*logn)
 
-###Porównanie złożoności dla różnego typu danych:
+#### #Porównanie złożoności dla różnego typu danych:
 
 ![alt text](plotquickSort.png)
 
-###Wnioski:
+#### #Wnioski:
 
 Podobny czas dla wszystkich testów, gdyż w algorytmie wybieramy losowo pivota, a testy tego nie uwzględniają. Zdecydowanie najlepiej wypadają wartości stałe gdyż nie wchodzą one do wywołań rekurencyjnych.
 
-####Własne spostrzeżenia:
+#### ##Własne spostrzeżenia:
 algorytm wyraźnie szybszy od naiwnych, jednak jego implementacja jest odrobinę bardziej skomplikowana; napotkałem na problemy z implementacją tego algorytmu, by działał w miejscu. Dla danych do 1mln nie zauważyłem przez to spadków wydajności. Tworząc podtablice z wartościami mniejszymi, większymi i równymi pivotowi, algorytm bardzo dobrze radzi sobie z danymi o stałych wartościach.
 
-###Merge Sort
+#### #Merge Sort
 
-###Opis:
+#### #Opis:
 
 Podejście dziel i zwyciężaj. Algorytm dzieli tablicę na pół rekurencyjnie, aż do uzyskania podtablic o długości jeden, które są posortowane. Następnie od ostatniego wywołania funkcji łączymy dwie posortowane podtablice w jedną która jest wynikiem tego wywołania. Algorytm stabilny. Złożoność czasowa O(n*logn) dla każdego przypadku.
 
-###Porównanie złożoności dla różnego typu danych:
+#### #Porównanie złożoności dla różnego typu danych:
 
 ![alt text](plotmergeSort.png)
 
-###Wnioski:
+#### #Wnioski:
 
 Dla wszystkich wartości złożoność czasowa jest bardzo podobna. 
 
-###Własne spostrzeżenia:
+#### #Własne spostrzeżenia:
 
 otrzymałem gorsze wyniki dla tego algorytmu niż w przypadku quicksorta, jednak algorytm był łatwiejszy w implementacji.
 
-###Heap Sort
+#### #Heap Sort
 
-###Opis:
+#### #Opis:
 
 Algorytm bazuje na strukturze kopca.
 Elementy rodzice (indeks k) mają dzieci o indeksach 2k+1 i 2k+2
@@ -137,35 +137,35 @@ Funkcja ta jest wykonywana na wszystkich rodzicach od ostatniego.
 Kopiec się rozrasta i elementy ustawiają się na odpowiednich miejscach.
 Sortowanie w miejscu. Złożoność czasowa O(n*logn)
 
-###Porównanie złożoności dla różnego typu danych:
+#### #Porównanie złożoności dla różnego typu danych:
 
 ![alt text](plotheapSort.png)
 
-###Wnioski:
+#### #Wnioski:
 
 Algorytm wykazuje podobną złożoność czasową, dla każdego typu danych. Najlepszy wynik otrzymujemy dla danych stałych.
 
-###Własne spostrzeżenia:
+#### #Własne spostrzeżenia:
 
 zdecydowanie najtrudniejszy algorytm w implementacji z tutaj przedstawionych, napotkałem trudności w tworzeniu funkcji, która ustawia rodzica z dziećmi w dobrej hierarchii oraz w odpowiednim wywołaniu tej funkcji; działa jednak bardzo szybko
 
-###Counting Sort
+#### #Counting Sort
 
-###Opis:
+#### #Opis:
 
 Algorytm stosuje dodatkową tablicę pomocniczą, która zlicza ilość wystąpień każdego elementu. Następnie elementy są zwracane. Złożoność czasowa O(n +k). Przypadek pesymistyczny następuje, gdy dane mają duży zakres, a część liczb z zakresu nie znajduje się w tablicy np. [5, 500000].
 
-###Porównanie złożoności dla różnego typu danych:
+#### #Porównanie złożoności dla różnego typu danych:
 
-####Wnioski:
+#### ##Wnioski:
 
 Algorytm można stosować tylko na liczbach całkowitych. Jest za to bardzo szybki, jeśli liczby nie mają o wiele większego zakresu od długości tablicy. Algorytm nie wykonuje porównań.
 
-###Własne spostrzeżenia:
+#### #Własne spostrzeżenia:
 
 najbardziej przyjemny w implementacji ze wszystkich przedstawionych algorytmów, bardzo szybko działa oraz nie sprawia problemów w implementacji; jednak ma duże ograniczenia ze względu na typ sortowanych danych oraz ich zakres
 
-###Testy poprawności algorytmów
+#### #Testy poprawności algorytmów
 Do sprawdzenia działania algorytmów zastosowałem testy jednostkowe.
 Trzy pierwsze testy wygenerowałem za pomocą liczb pseudolosowych. Są to tablice o losowej długości z zakresu 1 - 10000 z liczbami z zakresu 0-1000.
 Test czwarty jest to sprawdzenie algorytmu dla stałej wartości dla wszystkich elementów.
@@ -201,20 +201,20 @@ if __name__ == '__main__':
     unittest.main()
 ```
 
-###Porównanie złożoności algorytmów
+#### #Porównanie złożoności algorytmów
 
 Tworzę po 100 testów dla każdej wielkości danych [50, 100, 200, 300, 500, 1000]
 Test zapełniam liczbami pseudolosowymi z zakresu 0-1000.
 Wywołuję funkcje sortowania dla każdego pliku wejściowego i zapisuję wynik oraz czas plikach wyjściowych. Czas mierzę za pomocą biblioteki timeit.
 
-###Zestawienie wyników na wykresie
+#### #Zestawienie wyników na wykresie
 
 Stworzyłem wykres za pomocą biblioteki matplotlib. I zestawiłem na nim średni czas sortowania danych przez dany algorytm w zależności od wielkości danych wejściowych.
 
 ![alt text](plot.png)
 
 
-###Wnioski
+#### #Wnioski
 
 W moim przypadku najgorszą efektywnością wykazał się algorytm Bubble Sort
 Niewiele gorzej również wypadły Insert Sort oraz Select Sort.
@@ -223,7 +223,7 @@ Znacznie lepsze rezultaty można zauważyć w algorytmach Quick Sort i Merge Sor
 Najlepiej wypadły algorytmy Heap Sort i Counting Sort.
 
 
-###Źródła
+#### #Źródła
 
 Data dostępu: 12.03.2021r
 https://ekursy.put.poznan.pl/pluginfile.php/1046084/mod_resource/content/4/Frohmberg-ASD-temat-1.pdf
