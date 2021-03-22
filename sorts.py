@@ -1,4 +1,4 @@
-import timeit
+import time
 from random import randint
 #from random import shuffle
 
@@ -90,6 +90,7 @@ def heapSort(numbers):
         numbers = heapify(numbers, i)
     return numbers
 
+
 def countingSort(numbers):
     tab = [0] * (max(numbers) + 1)
     for i in numbers:
@@ -102,16 +103,17 @@ def countingSort(numbers):
 
 
 def main():
-    tab = [1, 5, 6, 7, 3, 45, 213, 23, 34, 12, 1, 5, 4, 2, 3, 9, 123]
+    sorts = [selectionSort, insertionSort, bubbleSort, quickSort, mergeSort, heapSort, countingSort]
+    f = open("Values/selectionSort_values1000_32.txt")
+    tab = list(map(int, f.readline().strip().split(", ")))
     print(tab)
-    #print("Bogo Sort: {}\n Times: {}".format(str(bogoSort(tab)), str(timeit.timeit(str(bogoSort(tab))))))
-    print("Selection Sort: {}\n Times: {}".format(str(selectionSort(tab)), str(timeit.timeit(str(selectionSort(tab))))))
-    print("Insertion Sort: {}\n Times: {}".format(str(insertionSort(tab)), str(timeit.timeit(str(insertionSort(tab))))))
-    print("Bubble Sort: {} \nTimes: {}".format(str(bubbleSort(tab)), str(timeit.timeit(str(bubbleSort(tab))))))
-    print("Quick Sort: {} \nTimes: {}".format(str(quickSort(tab)), str(timeit.timeit(str(quickSort(tab))))))
-    print("Merge Sort: {} \nTimes: {}".format(str(mergeSort(tab)), str(timeit.timeit(str(mergeSort(tab))))))
-    print("Heap Sort: {} \nTimes: {}".format(str(heapSort(tab)), str(timeit.timeit(str(heapSort(tab))))))
-    print("Counting Sort: {} \nTimes: {}".format(str(countingSort(tab)), str(timeit.timeit(str(countingSort(tab))))))
+    for sort in sorts:
+        start = time.time()
+        print("{}: {}".format(sort.__name__, sort(tab)))
+        end = time.time()
+        t = end - start
+        print("Time: {}".format(str(t)))
+
 
 if __name__ == '__main__':
     main()
