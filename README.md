@@ -8,29 +8,6 @@ Algorytmy i Struktury Danych
 Michał Zieliński 
 INF5.1 148064
 
-##### Table of Contents  
-[1. Algorytmy sortowania](#Algorytmy Sortowania)  
-<a name="Algorytmy Sortowania"/>
-[1.1 Selection Sort](#Selection Sort)
-<a name ="Selection Sort"/>
-
-[1.2 Insertion Sort](#Insertion Sort)
-<a name ="Insertion Sort"/>
-
-[1.3 Bubble Sort](#Bubble Sort)
-<a name ="Bubble Sort"/>
-
-[1.4 Quick Sort](#Quick Sort)
-<a name ="Quick Sort"/>
-
-[1.5 Merge Sort](#Merge Sort)
-<a name ="Merge Sort"/>
-
-[1.6 Heap Sort](#Heap Sort)
-<a name ="Heap Sort"/>
-
-[1.7 Counting Sort](#Counting Sort)
-<a name ="Counting Sort"/>
 ## Algorytmy Sortowania
 
 Cel sprawozdania:
