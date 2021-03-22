@@ -8,7 +8,7 @@ Algorytmy i Struktury Danych
 Michał Zieliński 
 INF5.1 148064
 
-##Table of contents  
+## Table of contents  
 1.[Algorytmy Sortowania](#algorytmy-sortowania)  
 
 ## Algorytmy Sortowania
