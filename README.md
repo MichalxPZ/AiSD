@@ -165,19 +165,20 @@ Algorytm można stosować tylko na liczbach całkowitych. Jest za to bardzo szyb
 
 najbardziej przyjemny w implementacji ze wszystkich przedstawionych algorytmów, bardzo szybko działa oraz nie sprawia problemów w implementacji; jednak ma duże ograniczenia ze względu na typ sortowanych danych oraz ich zakres
 
-#### Testy poprawności algorytmów
-Do sprawdzenia działania algorytmów zastosowałem testy jednostkowe.
-Trzy pierwsze testy wygenerowałem za pomocą liczb pseudolosowych. Są to tablice o losowej długości z zakresu 1 - 10000 z liczbami z zakresu 0-1000.
-Test czwarty jest to sprawdzenie algorytmu dla stałej wartości dla wszystkich elementów.
-Test piąty i szósty są to liczby posortowane rosnąco i malejąco.
-Ostatni test jest to “piramida”, gdzie pierwsza połowa tablicy jest posortowana rosnąco, a druga malejąco.
-Poniżej umieszczam tylko implementację testu dla piramidy.
+#### Testy poprawności algorytmów  
+Do sprawdzenia działania algorytmów zastosowałem testy jednostkowe.  
+Trzy pierwsze testy wygenerowałem za pomocą liczb pseudolosowych. Są to tablice o losowej długości z zakresu 1 - 10000 z liczbami z zakresu 0-1000.  
+Test czwarty jest to sprawdzenie algorytmu dla stałej wartości dla wszystkich elementów.  
+Test piąty i szósty są to liczby posortowane rosnąco i malejąco.  
+Ostatni test jest to “piramida”, gdzie pierwsza połowa tablicy jest posortowana rosnąco, a druga malejąco.  
+Poniżej umieszczam tylko implementację testu dla piramidy.  
 Reszta testów jest dostępna w repozytorium github.
+
+```python
 import unittest
 import sorts
 from random import randint
 
-```python
 class MyTestCase(unittest.TestCase):
     def testPyramid(self):
         tabLenght = randint(1, 10000)
